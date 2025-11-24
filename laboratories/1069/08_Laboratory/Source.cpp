@@ -14,7 +14,7 @@ using namespace std;
 
 class ArraysUtil {
 public:
-	static float* copyFloatArray(float* values, int noElements) {
+	float* copyFloatArray(float* values, int noElements) {
 		float* copy = new float[noElements];
 		for (int i = 0; i < noElements; i++) {
 			copy[i] = values[i];
@@ -42,8 +42,12 @@ public:
 		}
 		//copy & avoid memory
 		delete[] this->temperaturesPerDay;
-		this->temperaturesPerDay = 
-			ArraysUtil::copyFloatArray(values, noValues);
+		//this->temperaturesPerDay = 
+		//	ArraysUtil::copyFloatArray(values, noValues);
+
+		ArraysUtil temp;
+		this->temperaturesPerDay = temp.copyFloatArray(values, noValues);
+
 		this->noDays = noValues;
 	}
 
