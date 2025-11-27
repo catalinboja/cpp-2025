@@ -1,0 +1,3 @@
+Name: Bob
+Age: 21
+Grades:  10 10 9 10
