@@ -116,7 +116,7 @@ public:
 			return false;
 	}
 
-	char& operator[](int index) {
+	char operator[](int index) {
 		if (index >= 0 && index < strlen(this->description))
 			return this->description[index];
 		else
