@@ -1,0 +1,10 @@
+
+		 Van Info
+	Driver info:
+ Name: John Doe
+ Age: 18
+	Van info:
+ Max speed:0
+Boxes list:
+ Address: Piata Romana 7 with weight: 0
+ Address: Calea Dorobanti 15 with weight: 0
